@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Reel - Chiara Autiero</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header with Name and Navigation -->
+    <header>
+        <div class="container">
+            <h1>Chiara Autiero</h1>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#menu" id="menu-icon">☰</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Popup Menu -->
+    <div id="popup-menu" class="popup-menu">
+        <a href="#" id="close-popup">✖</a>
+        <ul>
+            <li><a href="resume.html">My Resume</a></li>
+            <li><a href="animationreel.html">Animation Reel</a></li>
+            <li><a href="mocap.html">Motion Capture Journal</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <section id="animation-reel">
+            <h2>Animation Reel</h2>
+            <p>Welcome to my animation reel page! Here you can explore a summary of my animation work and projects.</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Chiara Autiero</p>
+    </footer>
+
+    <!-- JavaScript for Popup Menu -->
+    <script>
+        const menuIcon = document.getElementById('menu-icon');
+        const popupMenu = document.getElementById('popup-menu');
+        const closePopup = document.getElementById('close-popup');
+
+        menuIcon.addEventListener('click', () => {
+            popupMenu.style.display = 'block';
+        });
+
+        closePopup.addEventListener('click', () => {
+            popupMenu.style.display = 'none';
+        });
+
+        window.onclick = function(event) {
+            if (event.target == popupMenu) {
+                popupMenu.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
