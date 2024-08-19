@@ -1,0 +1,73 @@
+    <body>
+    <!-- Header with Name and Navigation -->
+    <header>
+        <div class="container">
+            <h1>Chiara Autiero</h1>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu" id="menu-icon">☰</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Popup Menu -->
+    <div id="popup-menu" class="popup-menu">
+        <a href="#" id="close-popup">✖</a>
+        <ul>
+          <li><a href="download">My Resume</a></li>
+          <li><a href="demoreel1">Animation Reel</a></li>
+            <li><a href="mocap">Motion Capture Journal</a></li>
+            <li><a href="projects">Projects</a></li>
+          <li><a href="Linktree">Linktree</a></li>
+          <li><a href="Contactme">Contact Me</a></li>
+        </ul>
+    </div>
+
+
+<!-- Main Content -->
+    <main>
+        <section id="bio" class="bio">
+            <h2>About Me</h2>
+            <p>This section will contain your bio. You can add a short description of yourself, your skills, and your experience in the film and games industry.</p>
+        </section>
+
+        <section id="links" class="links">
+            <h2>Links</h2>
+            <p>This section can contain information or links related to your internet profiles.</p>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <p>This section can contain your game pitch details or a link to it.</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Chiara Autiero</p>
+    </footer>
+
+    <!-- JavaScript for Popup Menu -->
+    <script>
+        const menuIcon = document.getElementById('menu-icon');
+        const popupMenu = document.getElementById('popup-menu');
+        const closePopup = document.getElementById('close-popup');
+
+        menuIcon.addEventListener('click', () => {
+            popupMenu.style.display = 'block';
+        });
+
+        closePopup.addEventListener('click', () => {
+            popupMenu.style.display = 'none';
+        });
+
+        window.onclick = function(event) {
+            if (event.target == popupMenu) {
+                popupMenu.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
