@@ -25,7 +25,7 @@
     <div id="popup-menu" class="popup-menu">
         <a href="#" id="close-popup">✖</a>
         <ul>
-            <li><a href="resume">My Resume</a></li>
+            <li><a href="resume.html">My Resume</a></li>
             <li><a href="animationreel.html">Animation Reel</a></li>
             <li><a href="mocap.html">Motion Capture Journal</a></li>
             <li><a href="projects.html">Projects</a></li>
@@ -59,4 +59,23 @@
     <!-- JavaScript for Popup Menu -->
     <script>
         const menuIcon = document.getElementById('menu-icon');
+        const popupMenu = document.getElementById('popup-menu');
+        const closePopup = document.getElementById('close-popup');
+
+        menuIcon.addEventListener('click', () => {
+            popupMenu.style.display = 'block';
+        });
+
+        closePopup.addEventListener('click', () => {
+            popupMenu.style.display = 'none';
+        });
+
+        window.onclick = function(event) {
+            if (event.target == popupMenu) {
+                popupMenu.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
 
