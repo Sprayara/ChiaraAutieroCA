@@ -1,7 +1,15 @@
-    <body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chiara Autiero Portfolio</title>
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
     <!-- Header with Name and Navigation -->
     <header>
-        <link rel="stylesheet" href="styles.css">
         <div class="container">
             <h1>Chiara Autiero</h1>
             <nav>
@@ -17,17 +25,16 @@
     <div id="popup-menu" class="popup-menu">
         <a href="#" id="close-popup">✖</a>
         <ul>
-          <li><a href="download">My Resume</a></li>
-          <li><a href="demoreel1">Animation Reel</a></li>
+            <li><a href="download">My Resume</a></li>
+            <li><a href="demoreel1">Animation Reel</a></li>
             <li><a href="mocap">Motion Capture Journal</a></li>
             <li><a href="projects">Projects</a></li>
-          <li><a href="Linktree">Linktree</a></li>
-          <li><a href="Contactme">Contact Me</a></li>
+            <li><a href="Linktree">Linktree</a></li>
+            <li><a href="Contactme">Contact Me</a></li>
         </ul>
     </div>
 
-
-<!-- Main Content -->
+    <!-- Main Content -->
     <main>
         <section id="bio" class="bio">
             <h2>About Me</h2>
@@ -53,22 +60,4 @@
     <!-- JavaScript for Popup Menu -->
     <script>
         const menuIcon = document.getElementById('menu-icon');
-        const popupMenu = document.getElementById('popup-menu');
-        const closePopup = document.getElementById('close-popup');
 
-        menuIcon.addEventListener('click', () => {
-            popupMenu.style.display = 'block';
-        });
-
-        closePopup.addEventListener('click', () => {
-            popupMenu.style.display = 'none';
-        });
-
-        window.onclick = function(event) {
-            if (event.target == popupMenu) {
-                popupMenu.style.display = 'none';
-            }
-        }
-    </script>
-</body>
-</html>
