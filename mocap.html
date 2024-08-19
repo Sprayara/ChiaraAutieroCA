@@ -60,23 +60,25 @@
 
     <!-- JavaScript for Popup Menu -->
     <script>
-        const menuIcon = document.getElementById('menu-icon');
-        const popupMenu = document.getElementById('popup-menu');
-        const closePopup = document.getElementById('close-popup');
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const menuIcon = document.getElementById('menu-icon');
+            const popupMenu = document.getElementById('popup-menu');
+            const closePopup = document.getElementById('close-popup');
 
-        menuIcon.addEventListener('click', () => {
-            popupMenu.style.display = 'block';
-        });
+            menuIcon.addEventListener('click', () => {
+                popupMenu.style.display = 'block';
+            });
 
-        closePopup.addEventListener('click', () => {
-            popupMenu.style.display = 'none';
-        });
-
-        window.onclick = function(event) {
-            if (event.target == popupMenu) {
+            closePopup.addEventListener('click', () => {
                 popupMenu.style.display = 'none';
+            });
+
+            window.onclick = function(event) {
+                if (event.target == popupMenu) {
+                    popupMenu.style.display = 'none';
+                }
             }
-        }
+        });
     </script>
 </body>
 </html>
