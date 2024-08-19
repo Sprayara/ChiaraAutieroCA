@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Chiara Autiero</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header with Name and Navigation -->
+    <header>
+        <div class="container">
+            <h1>Chiara Autiero</h1>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#menu" id="menu-icon">☰</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Popup Menu -->
+    <div id="popup-menu" class="popup-menu">
+        <a href="#" id="close-popup">✖</a>
+        <ul>
+            <li><a href="resume.html">My Resume</a></li>
+            <li><a href="animationreel.html">Animation Reel</a></li>
+            <li><a href="mocap.html">Motion Capture Journal</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <section id="projects">
+            <h2>Projects</h2>
+            <p>Explore the projects I have worked on. Here you can find details about various projects including their objectives, technologies used, and results achieved.</p>
+
+            <!-- Example Section: Project Entries -->
+            <div class="project-entries">
+                <h3>Featured Projects</h3>
+                <article>
+                    <h4>Project Title 1</h4>
+                    <p>Description of Project 1. This includes information about the project's goals, the technologies employed, and any significant outcomes or achievements.</p>
+                </article>
+                <article>
+                    <h4>Project Title 2</h4>
+                    <p>Description of Project 2, highlighting its scope, the techniques used, and any notable results or contributions to the field.</p>
+                </article>
+                <!-- Add more project entries as needed -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Chiara Autiero</p>
+    </footer>
+
+    <!-- JavaScript for Popup Menu -->
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const menuIcon = document.getElementById('menu-icon');
+            const popupMenu = document.getElementById('popup-menu');
+            const closePopup = document.getElementById('close-popup');
+
+            menuIcon.addEventListener('click', () => {
+                popupMenu.style.display = 'block';
+            });
+
+            closePopup.addEventListener('click', () => {
+                popupMenu.style.display = 'none';
+            });
+
+            window.onclick = function(event) {
+                if (event.target == popupMenu) {
+                    popupMenu.style.display = 'none';
+                }
+            }
+        });
+    </script>
+</body>
+</html>
