@@ -38,4 +38,32 @@
         <section id="resume" class="resume">
             <h2>My Resume</h2>
             <p>Welcome to my resume page! Here you'll find an overview of my professional experience, education, and skills.</p>
-  
+        </section>
+    </main>
+<!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Chiara Autiero</p>
+    </footer>
+
+    <!-- JavaScript for Popup Menu -->
+    <script>
+        const menuIcon = document.getElementById('menu-icon');
+        const popupMenu = document.getElementById('popup-menu');
+        const closePopup = document.getElementById('close-popup');
+
+        menuIcon.addEventListener('click', () => {
+            popupMenu.style.display = 'block';
+        });
+
+        closePopup.addEventListener('click', () => {
+            popupMenu.style.display = 'none';
+        });
+
+        window.onclick = function(event) {
+            if (event.target == popupMenu) {
+                popupMenu.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
