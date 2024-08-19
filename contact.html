@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - Chiara Autiero</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header with Name and Navigation -->
+    <header>
+        <div class="container">
+            <h1>Chiara Autiero</h1>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#menu" id="menu-icon">☰</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Popup Menu -->
+    <div id="popup-menu" class="popup-menu">
+        <a href="#" id="close-popup">✖</a>
+        <ul>
+            <li><a href="resume.html">My Resume</a></li>
+            <li><a href="animationreel.html">Animation Reel</a></li>
+            <li><a href="mocap.html">Motion Capture Journal</a></li>
+            <li><a href="projects.html">Projects</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>If you'd like to get in touch with me, please use the contact form below or reach out via the contact details provided.</p>
+            
+            <!-- Contact Details -->
+            <div class="contact-details">
+                <h3>Contact Details</h3>
+                <p>Email: <a href="mailto:chiara@example.com">chiara@example.com</a></p>
+                <p>Phone: +123 456 7890</p>
+                <!-- Add other contact details if necessary -->
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h3>Send Me a Message</h3>
+                <form action="send-message.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Chiara Autiero</p>
+    </footer>
+
+    <!-- JavaScript for Popup Menu -->
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const menuIcon = document.getElementById('menu-icon');
+            const popupMenu = document.getElementById('popup-menu');
+            const closePopup = document.getElementById('close-popup');
+
+            menuIcon.addEventListener('click', () => {
+                popupMenu.style.display = 'block';
+            });
+
+            closePopup.addEventListener('click', () => {
+                popupMenu.style.display = 'none';
+            });
+
+            window.onclick = function(event) {
+                if (event.target == popupMenu) {
+                    popupMenu.style.display = 'none';
+                }
+            }
+        });
+    </script>
+</body>
+</html>
