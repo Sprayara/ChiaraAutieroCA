@@ -7,8 +7,8 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #000; /* Cambiato a nero */
+    color: #fff; /* Cambiato a bianco */
     line-height: 1.6;
 }
 
@@ -21,7 +21,7 @@ body {
 
 /* Header Styling */
 header {
-    background-color: #333;
+    background-color: #000; /* Cambiato a nero */
     color: #fff;
     padding: 10px 0;
     text-align: center;
@@ -105,22 +105,24 @@ main {
     padding: 20px;
     margin: 20px auto;
     max-width: 800px;
-    background-color: #fff;
+    background-color: #000; /* Cambiato a nero */
+    color: #fff; /* Cambiato a bianco */
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Ombra più chiara per contrasto */
 }
 
 h2 {
-    color: #333;
+    color: #fff; /* Cambiato a bianco */
     margin-bottom: 10px;
 }
 
 p {
     margin-bottom: 20px;
+    color: #fff; /* Assicurarsi che il testo nei paragrafi sia bianco */
 }
 
 a {
-    color: #333;
+    color: #fff; /* Cambiato a bianco */
     text-decoration: none;
 }
 
@@ -130,7 +132,7 @@ a:hover {
 
 /* Footer Styling */
 footer {
-    background-color: #333;
+    background-color: #000; /* Cambiato a nero */
     color: #fff;
     padding: 10px 0;
     text-align: center;
